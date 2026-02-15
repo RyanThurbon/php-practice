@@ -1,6 +1,11 @@
 <?php
 require_once "includes/session_config.inc.php";
 require_once "includes/signup/signup_view.inc.php";
+
+if (isset($_SESSION["user_username"])) {
+	header("Location: logout.php");
+	die();
+}
 ?>
 
 <!DOCTYPE html>

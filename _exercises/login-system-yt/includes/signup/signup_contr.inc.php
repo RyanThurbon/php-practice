@@ -29,7 +29,6 @@ function is_username_taken(PDO $pdo, string $username): bool
 	return false;
 }
 
-
 function is_email_registered(PDO $pdo, string $email): bool
 {
 	if (get_email($pdo, $email)) {
@@ -38,7 +37,6 @@ function is_email_registered(PDO $pdo, string $email): bool
 
 	return false;
 }
-
 
 function set_user(PDO $pdo, string $username, string $password, string $email): bool
 {

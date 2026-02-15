@@ -38,6 +38,6 @@ function check_signup_errors()
 	}
 
 	if (isset($_GET["signup"]) && $_GET["signup"] === "success") {
-		echo "<p class='text-emerald-400'>" . " Signup successfull!" . "</p>";
+		echo "<p class='text-emerald-400 text-center'>" . "Signup successfull!" . "</p>";
 	}
 }
